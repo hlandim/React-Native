@@ -1,13 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import EventList from './EventList'
+import EventForm from './EventForm';
+import {StackNavigatior} from 'react-navigation'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View>
-        <EventList/>
-      </View>
-    );
-  }
-}
+export default StackNavigatior({
+  list: {
+    screen: EventList,
+    navigationOptions: () => ({
+      title: 'Yours Events'
+    }),
+  },
+});
