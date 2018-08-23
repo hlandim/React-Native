@@ -2,22 +2,21 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    ThouchebleHighlight,
+    TouchableHighlight,
 } from 'react-native';
 
 class EventForm extends React.Component {
 
     handleAddPress = () => {
-        
     }
 
     render() {
         return (
             <View>
-                <ThouchebleHighlight
+                <TouchableHighlight
                     onPress={this.handleAddPress}>
                     <Text>add</Text>
-                </ThouchebleHighlight>
+                </TouchableHighlight>
             </View>
         );
     };
